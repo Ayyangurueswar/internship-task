@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import FlashCards from './components/FlashCards';
+import Mathematics from './components/Mathematics';
+import Relations from './components/Relations';
+import Breadcrumbs from './components/Breadcrumbs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App mx-20">
+        <Header />
+        <Breadcrumbs />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/flashcard' element={<FlashCards />} />
+          <Route path='/flashcard/maths' element={<Mathematics />} />
+          <Route path='/flashcard/maths/relations' element={<Relations />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
