@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className='container-fluid flex justify-between items-center'>
-      <a href='/'>
-        <img src='images/Hy.png' alt='logo' className='h-20 w-56'>
-        </img>
+      <a href='/internship-task'>
+        <img src='images/Hy.png' alt='logo' className='h-20 w-56' />
       </a>
       <div className='flex justify-around items-center gap-10'>
         <Link to='/'>Home</Link>
