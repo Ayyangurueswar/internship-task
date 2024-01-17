@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Mathematics = () => {
   return (
-    <div>
-      <Link to='/flashcard/maths/relations'>Relations and functions</Link>
+    <div className='flex justify-center items-center w-full h-full gap-8 justify-around'>
+      <h1>Mathematics page</h1>
+      <Link to='/flashcard/maths/relations'>Go to Relations and functions page</Link>
     </div>
   )
 }

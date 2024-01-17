@@ -35,7 +35,9 @@ const CustomTabPanels = ({value, index, valueArray}) => {
             <span>&gt;</span>
           </button>
         </div>
-        <FullscreenIcon fontSize='large' className='custom_color'/>
+        <button>
+          <FullscreenIcon fontSize='large' className='custom_color'/>
+        </button>
       </div>
     </div>
   )

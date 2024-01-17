@@ -55,7 +55,7 @@ const Relations = () => {
       <CustomTabPanels value={value} index={3} valueArray={gameArray}/>
       <CustomTabPanels value={value} index={4} valueArray={otherContent}/>
     </Box>
-    <div className='w-full flex justify-between my-9'>
+    <div className='w-full flex justify-between my-16'>
         <div className='flex gap-4 items-center'>
           <div className='custom_shadow h-16 w-16 rounded-full flex justify-center items-center'>
             <img src='/images/seperate_logo.png' className='h-10 w-10 rounded-full' alt='logo'/>
@@ -124,7 +124,7 @@ const Relations = () => {
           <Button type="submit">Create</Button>
         </DialogActions>
       </Dialog>
-      <h1 className='text-3xl font-bold text-indigo-800 mt-24'>FAQ</h1>
+      <h1 className='text-3xl font-bold text-indigo-800 mt-20'>FAQ</h1>
       <Faq />
     </div>
   )
