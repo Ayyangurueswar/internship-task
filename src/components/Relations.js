@@ -58,11 +58,11 @@ const Relations = () => {
     <div className='w-full flex justify-between my-16'>
         <div className='flex gap-4 items-center'>
           <div className='custom_shadow h-16 w-16 rounded-full flex justify-center items-center'>
-            <img src='/images/seperate_logo.png' className='h-10 w-10 rounded-full' alt='logo'/>
+            <img src='images/seperate_logo.png' className='h-10 w-10 rounded-full' alt='logo'/>
           </div>
           <div className='flex-col'>
             <p className='text-xs font-bold text-slate-500'>Published by</p>
-            <img src='/images/name.png' className='h-10 w-28' alt='logo'/>
+            <img src='images/name.png' className='h-10 w-28' alt='logo'/>
           </div>
         </div>
         <button className='flex gap-2 items-center' onClick={toggleOpen}>
