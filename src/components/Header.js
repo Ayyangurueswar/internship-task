@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Hy from '../images/Hy.png'
 
 const Header = () => {
   return (
     <div className='container-fluid flex justify-between items-center'>
       <a href='/internship-task'>
-        <img src='images/Hy.png' alt='logo' className='h-20 w-56' />
+        <img src={Hy} alt='logo' className='h-20 w-56' />
       </a>
       <div className='flex justify-around items-center gap-10'>
         <Link to='/'>Home</Link>
