@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import FlashCards from './components/FlashCards';
 import Mathematics from './components/Mathematics';
@@ -10,7 +9,7 @@ import Breadcrumbs from './components/Breadcrumbs';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App mx-20">
         <Header />
         <Breadcrumbs />
@@ -21,7 +20,7 @@ function App() {
           <Route path='/flashcard/maths/relations' element={<Relations />} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
